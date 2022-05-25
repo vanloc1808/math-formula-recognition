@@ -131,7 +131,7 @@ def run_epoch(
                 grad_norm = nn.utils.clip_grad_norm_(
                     optim_params, max_norm=max_grad_norm
                 )
-                grad_norms.append(grad_norm)
+                grad_norms.append(grad_norm.cpu())
                 optimiser.step()
 
             losses.append(loss.item())
