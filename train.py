@@ -36,10 +36,10 @@ dropout_rate = 0.2
 teacher_forcing_ratio = 0.5
 seed = 1234
 
-gt_train = "../input/chrome-png/data/gt_split/train.tsv"
-gt_validation = "../input/chrome-png/data/gt_split/validation.tsv"
-tokensfile = "../input/chrome-png/data/tokens.tsv"
-root = "../input/chrome-png/data/train/"
+gt_train = "/kaggle/input/chrome-png/data/gt_split/train.tsv"
+gt_validation = "/kaggle/input/chrome-png/data/gt_split/validation.tsv"
+tokensfile = "/kaggle/input/chrome-png/data/tokens.tsv"
+root = "/kaggle/input/chrome-png/data/train/"
 use_cuda = torch.cuda.is_available()
 
 transformers = transforms.Compose(
